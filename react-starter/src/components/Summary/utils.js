@@ -1,0 +1,27 @@
+const summaryFields = {
+  latest_date: "Latest Date",
+  change_cases: "Change Cases",
+  change_fatalities: "Change Fatalities",
+  change_tests: "Change Tests",
+  change_hospitalizations: "Change Hospitalizations",
+  change_criticals: "Change Criticals",
+  change_recoveries: "Change Recoveries",
+  change_vaccinations: "Change Vaccinations",
+  change_vaccinated: "Change Vaccinated",
+  change_boosters_1: "Change Boosters 1",
+  change_boosters_2: "Change Boosters 2",
+  change_vaccines_distributed: "Change Vaccines_distributed",
+  total_cases: "Total Cases",
+  total_fatalities: "Total Fatalities",
+  total_tests: "Total Tests",
+  total_hospitalizations: "Total Hospitalizations",
+  total_criticals: "Total Criticals",
+  total_recoveries: "Total Recoveries",
+  total_vaccinations: "Total Vaccinations",
+  total_vaccinated: "Total Vaccinated",
+  total_boosters_1: "Total Boosters 1",
+  total_boosters_2: "Total Boosters 2",
+  total_vaccines_distributed: "Total Vaccines Distributed",
+};
+
+export default summaryFields;
