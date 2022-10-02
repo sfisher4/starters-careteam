@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ErrorBoundary } from "react-error-boundary";
 import Summary from "./components/Summary/Summary";
 import ErrorFallback from "./components/Summary/ErrorFallback";
-import { ErrorBoundary } from 'react-error-boundary'
 
 const queryClient = new QueryClient();
 

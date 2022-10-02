@@ -4,7 +4,9 @@ import fetchSummary from "../../api/summaryAPI";
 import summaryFields from "./utils";
 
 function Summary() {
-  const { isLoading, error, data } = useQuery(["summary"], fetchSummary, { useErrorBoundary: true });
+  const { isLoading, error, data } = useQuery(["summary"], fetchSummary, {
+    useErrorBoundary: true,
+  });
 
   if (isLoading) return "Loading...";
 
@@ -16,7 +18,9 @@ function Summary() {
     <>
       {Object.keys(summaryFields).map((field) => (
         <React.Fragment key={field}>
-          <p className="summary-field"><b>{summaryFields[field]}:</b> {summary[field]}</p>
+          <p className="summary-field">
+            <b>{summaryFields[field]}:</b> {summary[field]}
+          </p>
         </React.Fragment>
       ))}
     </>
