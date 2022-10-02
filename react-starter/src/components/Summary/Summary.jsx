@@ -4,7 +4,7 @@ import fetchSummary from "../../api/summaryAPI";
 import summaryFields from "./utils";
 
 function Summary() {
-  const { isLoading, error, data } = useQuery(["summary"], fetchSummary);
+  const { isLoading, error, data } = useQuery(["summary"], fetchSummary, { useErrorBoundary: true });
 
   if (isLoading) return "Loading...";
 

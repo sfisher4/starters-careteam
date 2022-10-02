@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./App.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Summary from "./components/Summary/Summary";
+import ErrorFallback from "./components/Summary/ErrorFallback";
+import { ErrorBoundary } from 'react-error-boundary'
 
 const queryClient = new QueryClient();
 
@@ -10,7 +12,9 @@ function App() {
     <div className="App">
       <QueryClientProvider client={queryClient}>
         <h1>COVID-19 Tracker</h1>
-        <Summary />
+        <ErrorBoundary FallbackComponent={ErrorFallback}>
+          <Summary />
+        </ErrorBoundary>
       </QueryClientProvider>
     </div>
   );
