@@ -10,7 +10,7 @@ const summaryFields = {
   change_vaccinated: "Change Vaccinated",
   change_boosters_1: "Change Boosters 1",
   change_boosters_2: "Change Boosters 2",
-  change_vaccines_distributed: "Change Vaccines_distributed",
+  change_vaccines_distributed: "Change Vaccines Distributed",
   total_cases: "Total Cases",
   total_fatalities: "Total Fatalities",
   total_tests: "Total Tests",
